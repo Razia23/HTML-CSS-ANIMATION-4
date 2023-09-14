@@ -1,0 +1,118 @@
+body {
+    padding: 10px;
+    margin: 10px;
+}
+
+body .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    text-align: center;
+    background-color: rgb(250, 212, 162);
+    box-shadow: 0px 0px 10px darkgreen;
+    animation-name: flex;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flex {
+    0% {
+        transform: translate(0);
+        background-color: azure;
+    }
+
+    10% {
+        transform: translate(-2px, -2px);
+        background-color: bisque;
+    }
+
+    20% {
+        transform: translate(2px, -2px);
+        background-color: lemonchiffon;
+    }
+
+    30% {
+        transform: translate(-2px, 2px);
+        background-color: rgba(255, 205, 112, 0.815);
+    }
+
+    40% {
+        transform: translate(2px, 2px);
+        background-color: rgba(137, 43, 226, 0.425);
+        width: 60%;
+        height: 400px;
+        margin-top: 20%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    50% {
+        transform: translate(-2px, -2px);
+        background-color: rgba(165, 42, 42, 0.334);
+    }
+
+    60% {
+        transform: translate(2px, -2px);
+        background-color: white;
+    }
+
+    70% {
+        transform: translate(-2px, 2px);
+        background-color: rgba(0, 0, 0, 0.432);
+    }
+
+    80% {
+        transform: translate(-2px, -2px);
+    }
+
+    90% {
+        transform: translate(2px, -2px);
+        background-color: rgba(255, 0, 0, 0.671);
+    }
+
+    100% {
+        transform: translate(0);
+        background-color: cadetblue;
+    }
+}
+
+.flex div {
+    width: 150px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px darkgreen;
+    background-color: rgba(250, 235, 215, 0.653);
+    animation-name: img;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.flex img {
+    margin: 10px;
+}
+
+@keyframes img {
+    0% {
+        transform: scale(0.5);
+        transform-origin: 50% 0%;
+        border-radius: 100%;
+        filter: sepia(1);
+    }
+
+    50% {
+        transform: scale(0.75);
+        transform-origin: 50% 50%;
+        border-radius: 50%;
+        filter: blur(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+        transform-origin: 50% 100%;
+        border-radius: 12px;
+        filter: hue-rotate(5);
+    }
+}
